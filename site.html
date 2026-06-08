@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MadhavDen | Freelancing Portfolio</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif;}
+body{background:#f4f7fb;color:#333;}
+.hero{background:linear-gradient(135deg,#0f172a,#2563eb);color:white;padding:50px 10%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;}
+.hero-left h1{font-size:4rem;margin-bottom:10px;}
+.hero-left h2{font-size:1.5rem;color:#cbd5e1;}
+.hero-left p{margin-top:15px;max-width:600px;}
+.profile{text-align:center;}
+.container{width:90%;max-width:1200px;margin:auto;padding:50px 0;}
+.section-title{text-align:center;margin-bottom:30px;color:#1e3a8a;font-size:2rem;}
+.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:25px;}
+.card{background:white;border-radius:12px;overflow:hidden;box-shadow:0 3px 10px rgba(0,0,0,0.1);}
+.card img{width:100%;height:220px;object-fit:cover;}
+.card-content{padding:20px;}
+.card h3{color:#2563eb;margin-bottom:10px;}
+.about{background:white;padding:30px;border-radius:12px;box-shadow:0 3px 10px rgba(0,0,0,0.1);}
+.contact{background:#1e293b;color:white;padding:40px;border-radius:12px;}
+.contact p{margin:10px 0;font-size:1.1rem;}
+footer{text-align:center;background:#0f172a;color:white;padding:20px;margin-top:40px;}
+button{background:#2563eb;color:white;border:none;padding:12px 20px;border-radius:5px;cursor:pointer;margin-top:15px;}
+button:hover{background:#1d4ed8;}
+#msg{margin-top:15px;color:#4ade80;}
+
+@media(max-width:768px){
+.hero-left h1{font-size:2.5rem;}
+.hero{text-align:center;}
+}
+</style>
+</head>
+<body>
+
+<section class="hero">
+<div class="hero-left">
+<h1>MADHAVDEN</h1>
+<h2>Freelancing Blog & Portfolio</h2>
+<p>
+Welcome to MadhavDen. I provide professional website development,
+web application creation, and ready-made college project solutions.
+Helping students, startups, and businesses establish their digital presence.
+</p>
+</div>
+</section>
+
+<div class="container">
+<h2 class="section-title">About Me</h2>
+<div class="about">
+<p>
+I am a freelance web developer passionate about building modern,
+responsive websites and web applications. I also assist students
+with ready-made academic projects and technical solutions.
+</p>
+</div>
+</div>
+
+<div class="container">
+<h2 class="section-title">Services Offered</h2>
+<div class="services">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800" alt="Website Development">
+<div class="card-content">
+<h3>Static Website Development</h3>
+<p>Professional business websites, portfolios, landing pages, and personal websites.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800" alt="Web Applications">
+<div class="card-content">
+<h3>Web Applications</h3>
+<p>Dynamic web applications using modern technologies and responsive designs.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800" alt="College Projects">
+<div class="card-content">
+<h3>College Projects</h3>
+<p>Ready-made projects with source code, documentation, reports, and deployment support.</p>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="container">
+<h2 class="section-title">Contact Information</h2>
+<div class="contact">
+<p><strong>Name:</strong> Madhav</p>
+<p><strong>Email:</strong> velpulamadhav253@gmail.com</p>
+<p><strong>Phone:</strong> +91 8498848080</p>
+<p><strong>Location:</strong> Andhra Pradesh, India</p>
+
+<button onclick="contactMsg()">Hire Me</button>
+<p id="msg"></p>
+</div>
+</div>
+
+<footer>
+<p>© 2026 MadhavDen | Freelancing Blog & Portfolio</p>
+</footer>
+
+<script>
+function contactMsg(){
+document.getElementById("msg").innerHTML =
+"Thank you for your interest. Please contact me via email or phone.";
+}
+</script>
+
+</body>
+</html>
